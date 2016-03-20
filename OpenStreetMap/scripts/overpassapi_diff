@@ -1,0 +1,15 @@
+/*
+This query looks for nodes, ways and relations 
+with the given key/value combination.
+Choose your region and hit the Run button above!
+*/
+[out:json][timeout:25][diff:"2016-03-11T09:00:00Z","2016-03-19T09:00:00Z"];
+// gather results
+(
+  // query part for: “amenity=ferry_terminal”
+  way["highway"]({{bbox}});
+);
+// print results
+out body;
+>;
+out skel qt;
