@@ -8,3 +8,5 @@ https://github.com/mapconcierge/til/blob/master/OpenStreetMap/scripts/overpassap
 - 行政区域をポリゴンとして出力する方法（世田谷区の場合）<br>
 http://overpass-turbo.eu/s/fB8
 
+- クライシスマッピングに参加する方法 for 青山学院大学向け資料
+https://github.com/mapconcierge/til/blob/master/OpenStreetMap/Howtojoin2CrisisMapping4AGUstudents.md
