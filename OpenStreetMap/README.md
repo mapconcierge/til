@@ -10,3 +10,8 @@ http://overpass-turbo.eu/s/fB8
 
 - クライシスマッピングに参加する方法 for 青山学院大学向け資料
 https://github.com/mapconcierge/til/blob/master/OpenStreetMap/Howtojoin2CrisisMapping4AGUstudents.md
+
+
+# ウェブ技術
+## GatsbyJS
+
