@@ -4,6 +4,12 @@ TIL - Today I Learned
 
 # Category
 
+## Gatsby.JS
+
+### 画像の貼り方
+https://reffect.co.jp/react/gatsby-image-understand-for-beginner
+
+
 ## Chromebook
 
 ## GSImaps
