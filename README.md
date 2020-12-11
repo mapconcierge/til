@@ -22,10 +22,7 @@ TIL - Today I Learned
 ## zoho
 
 # I'm watching below TILs too
-- https://github.com/Yfuruchin/Til
 - https://github.com/fairlaterfair/til
-- https://github.com/Kenyat1989/TIL
-
 
 ## Privates
 - https://github.com/mapconcierge/salary4mapconcierge
