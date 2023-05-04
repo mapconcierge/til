@@ -7,4 +7,5 @@
 ### IDE Install
 * [Arduino IDE 2.1.0 / macOS Apple Silicon, 11: “Big Sur” or newer, 64 bits](https://www.arduino.cc/en/software)
 
+* 追加ボードマネージャーとして https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/package_m5stack_index.json を追加。
 
