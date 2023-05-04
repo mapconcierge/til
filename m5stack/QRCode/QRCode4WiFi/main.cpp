@@ -11,8 +11,15 @@ void setup() {
   M5.Lcd.setTextSize(3);
   
   // タイトル
-  M5.Lcd.setCursor(10, 80);
-  M5.Lcd.println("QR code + Button");
+  M5.Lcd.setCursor(10, 40);
+  M5.Lcd.println("DRONEBIRD maps");
+  M5.Lcd.println(" on UNVT Portable");
+  M5.Lcd.println(" v.0.51");
+  M5.Lcd.println(" ");
+  M5.Lcd.println(" ");
+  M5.Lcd.println(" ");
+  M5.Lcd.println(" ---");
+  M5.Lcd.println(" wi-fi, map, help");
 }
   
 void loop() {
@@ -22,16 +29,16 @@ void loop() {
     // A ボタン
     // https://1ft-seabass.jp/ のQRコードを表示
     M5.Lcd.fillScreen(BLACK);
-    M5.Lcd.qrcode("https://1ft-seabass.jp/",50,10,220,5);
+    M5.Lcd.qrcode("WIFI:S:dronebird;T:WPA;P:dronebid;;",50,10,220,5);
   } else if (M5.BtnB.wasReleased()) {
     // B ボタン
     // LINE BOT の友達追加 URL の QR コードを表示
     M5.Lcd.fillScreen(BLACK);
-    M5.Lcd.qrcode("https://line.me/R/ti/p/@XXXXXXXXXX",50,10,220,5);
+    M5.Lcd.qrcode("https://dronebird.org/",50,10,220,5);
   } else if (M5.BtnC.wasReleased()) {
     // C ボタン
     // Twitter URL https://twitter.com/1ft_seabass のQRコードを表示
     M5.Lcd.fillScreen(BLACK);
-    M5.Lcd.qrcode("https://twitter.com/1ft_seabass",50,10,220,5);
+    M5.Lcd.qrcode("https://github.com/unvt/portable",50,10,220,5);
   }
 }
