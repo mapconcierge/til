@@ -16,14 +16,14 @@ void setup() {
   M5.Lcd.setTextColor(DARKGREY);
   M5.Lcd.setTextSize(2);
   M5.Lcd.println(" on UNVT Portable");
-  M5.Lcd.println(" v.0.69");
-  M5.Lcd.setTextSize(3);
-  M5.Lcd.println(" \n \n \n \n");
-  //M5.Lcd.println(" ");
-  //M5.Lcd.println(" ");
-  //M5.Lcd.println(" ---");
-  //M5.Lcd.setTextColor(WHITE);
-  M5.Lcd.println(" wi-fi  map  help");
+  M5.Lcd.println(" v.0.74");
+
+  // 下部メニュー
+  M5.Lcd.setTextSize(2);
+  M5.Lcd.setCursor(25, 225);
+  M5.Lcd.setTextColor(DARKGREY);
+  M5.Lcd.println("wi-fi     map     help");
+
 }
   
 void loop() {
@@ -50,29 +50,59 @@ void loop() {
     M5.Lcd.println("dronebird");
 
     // 下部メニュー
-    M5.Lcd.setTextSize(3);
-    M5.Lcd.setCursor(0, 215);
+    M5.Lcd.setTextSize(2);
+    M5.Lcd.setCursor(25, 225);
     M5.Lcd.setTextColor(DARKGREY);
-    M5.Lcd.println(" wi-fi  map  help");
+    M5.Lcd.println("wi-fi     map     help");
 
   } else if (M5.BtnB.wasReleased()) {
     // B ボタン
     // URL の QR コードを表示
     M5.Lcd.fillScreen(DARKCYAN);
+    M5.Lcd.setTextColor(WHITE);
     //M5.Lcd.qrcode("https://dronebird.org/",50,10,220,5);
-    M5.Lcd.qrcode("https://dronebird.org/",70,10,180,5);
+    M5.Lcd.qrcode("https://192.168.1.1/",10,10,180,5);
+    M5.Lcd.setTextSize(3);
+    M5.Lcd.setCursor(200, 12);
+    M5.Lcd.println("MAP");
     M5.Lcd.setTextSize(1);
-    M5.Lcd.setCursor(10, 10);
-    M5.Lcd.println("Maps");
+    M5.Lcd.setCursor(200, 50);
+    M5.Lcd.println("https://");
+    M5.Lcd.setCursor(200, 70);
+    M5.Lcd.println("192.168.1.1");
+    M5.Lcd.setCursor(200, 100);
+    M5.Lcd.println("/maps");
+
+    // 下部メニュー
+    M5.Lcd.setTextSize(2);
+    M5.Lcd.setCursor(25, 225);
+    M5.Lcd.setTextColor(WHITE);
+    M5.Lcd.println("wi-fi     map     help");
 
   } else if (M5.BtnC.wasReleased()) {
     // C ボタン
     // URL の QR コードを表示
     M5.Lcd.fillScreen(DARKGREY);
-    M5.Lcd.qrcode("https://github.com/unvt/portable",50,10,220,5);
+    M5.Lcd.setTextColor(WHITE);
+    //M5.Lcd.qrcode("https://github.com/unvt/portable",50,10,220,5);
+    M5.Lcd.qrcode("https://github.com/unvt/portable",10,10,180,5);
+    M5.Lcd.setTextSize(3);
+    M5.Lcd.setCursor(200, 12);
+    M5.Lcd.println("HELP");
     M5.Lcd.setTextSize(1);
-    M5.Lcd.setCursor(10, 10);
-    M5.Lcd.println("Help");
+    M5.Lcd.setCursor(200, 50);
+    M5.Lcd.println("GitHub");
+    M5.Lcd.setTextSize(2);
+    M5.Lcd.setCursor(200, 70);
+    M5.Lcd.println("unvt");
+    M5.Lcd.setCursor(200, 100);
+    M5.Lcd.println("/portable");
+
+    // 下部メニュー
+    M5.Lcd.setTextSize(2);
+    M5.Lcd.setCursor(25, 225);
+    M5.Lcd.setTextColor(WHITE);
+    M5.Lcd.println("wi-fi     map     help");
 
   }
 }
